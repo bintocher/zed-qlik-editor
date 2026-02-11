@@ -1,4 +1,3 @@
-[package]
 id = "qlik"
 name = "Qlik"
 description = "Syntax highlighting for Qlik Sense / QlikView script files (.qvs)"
