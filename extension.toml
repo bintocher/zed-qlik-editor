@@ -3,9 +3,9 @@ name = "Qlik"
 description = "Syntax highlighting for Qlik Sense / QlikView script files (.qvs)"
 version = "0.1.0"
 schema_version = 1
-authors = ["bintocher <https://github.com/bintocher>"]
+authors = ["bintocher"]
 repository = "https://github.com/bintocher/zed-qlik-editor"
 
 [grammars.qlik]
 repository = "https://github.com/bintocher/zed-qlik-tree-sitter"
-rev = "588c450787293e6d81b5cdbc603537189d614433"
+commit = "6390263"
