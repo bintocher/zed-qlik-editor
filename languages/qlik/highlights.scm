@@ -6,7 +6,6 @@
 ; ─── Strings ──────────────────────────────────────────────
 (single_quoted_string) @string
 (double_quoted_string) @string
-(bracket_field) @string.special
 
 ; ─── Numbers ──────────────────────────────────────────────
 (integer) @number
@@ -25,15 +24,16 @@
 ; ─── Keywords (SET, LET, LOAD, IF, FOR, SUB, etc.) ───────
 (keyword) @keyword
 
-; ─── Table labels (TableName: before LOAD/SELECT) ────────
+; ─── General fallbacks (lowest priority — MUST be before specific patterns)
+(identifier) @variable
+(bracket_field) @string.special
+
+; ─── Table labels (overrides @variable / @string.special) ─
 (table_label
   name: (identifier) @label)
 (table_label
   name: (bracket_field) @label)
 
-; ─── Function calls ───────────────────────────────────────
+; ─── Function calls (overrides @variable for function names)
 (function_call
   name: (identifier) @function)
-
-; ─── Identifiers (fallback) ──────────────────────────────
-(identifier) @variable
