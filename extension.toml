@@ -8,4 +8,4 @@ repository = "https://github.com/bintocher/zed-qlik-editor"
 
 [grammars.qlik]
 repository = "https://github.com/bintocher/zed-qlik-tree-sitter"
-rev = "1ccfec63a234bfa4cffdf886557760a432f8d835"
+rev = "ea6ba9a768a6fb2ba22c835f34841eaf77b41a17"
