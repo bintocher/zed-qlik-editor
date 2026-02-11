@@ -25,6 +25,12 @@
 ; ─── Keywords (SET, LET, LOAD, IF, FOR, SUB, etc.) ───────
 (keyword) @keyword
 
+; ─── Table labels (TableName: before LOAD/SELECT) ────────
+(table_label
+  name: (identifier) @label)
+(table_label
+  name: (bracket_field) @label)
+
 ; ─── Function calls ───────────────────────────────────────
 (function_call
   name: (identifier) @function)
