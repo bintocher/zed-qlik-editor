@@ -1,0 +1,5 @@
+name = "Qlik"
+grammar = "qlik"
+path_suffixes = ["qvs"]
+line_comments = ["// "]
+block_comment = ["/* ", " */"]
